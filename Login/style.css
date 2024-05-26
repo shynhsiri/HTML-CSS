@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: 0%;
+    background-color: rgb(200, 233, 208);
+    background-image: url(tree.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    font-family: "Outfit", sans-serif;
+}
+/* card */
+div.card{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+}
+/* form */
+div.form{
+    position: relative;
+}
+
+h1{
+    font-weight: bold;
+}
+
+div.form input[type=text],[type=password]{
+    background-color: rgba(205, 205, 205, 0.24);
+    border: none;
+    height: 40px;
+    width: 270px;
+    padding: 15px;
+    border-radius: 60px;
+    margin-bottom: 10px;
+}
+
+/* line */
+div.line{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+/* switch */
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    color: gray;
+}
+.button{
+    background-color: #d2d2d2;
+    width: 30px;
+    height: 15px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    margin-right: 10px;
+}
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 200px;
+    transition: 0.2s;
+}
+input:checked + .button{
+    background-color:rgb(69, 201, 39);
+}
+input:checked + .button::before{
+    transform: translateX(-15px);
+}
+input[type=checkbox]{
+    display: none;
+}
+
+
+/* a */
+div.form a{
+    text-decoration: none;
+    color: rgb(69, 201, 39);
+    font-size: 10px;
+    font-weight: bold;
+    align-content: center;
+}
+
+/* submit */
+div.form input[type=submit]{
+    background-color: rgb(69, 201, 39);
+    color: white;
+    font-weight: 800;
+    border: none;
+    height: 40px;
+    width: -webkit-fill-available;
+    margin-top: 30px;
+    border-radius: 60px;
+}

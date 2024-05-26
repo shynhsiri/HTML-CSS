@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media Player</title>
+</head>
+<body>
+    <div class="media-controls">
+        <div class="media-buttons">
+            <button class="back-button media-button" label="back">
+              <i class="fas fa-step-backward button-icons"></i>
+              <span class="button-text milli">Back</span>
+            </button>
+        
+            <button class="rewind-button media-button" label="rewind">
+              <i class="fas fa-backward button-icons"></i>
+              <span class="button-text milli">Rewind</span>
+            </button>
+        
+            <button class="play-button media-button" label="play">
+              <i class="fas fa-play button-icons delta"></i>
+              <span class="button-text milli">Play</span>
+            </button>
+        
+            <button class="fast-forward-button media-button" label="fast forward">
+        
+              <i class="fas fa-forward button-icons"></i>
+              <span class="button-text milli">Forward</span>
+            </button>
+        
+            <button class="skip-button media-button" label="skip">
+              <i class="fas fa-step-forward button-icons"></i>
+              <span class="button-text milli">Skip</span>
+            </button>
+          </div>
+          <br>
+          <div class="time-control">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p id="currentTime">00:00</p>
+            <p id="totalTime">01:00</p>
+          </div> 
+    </div>
+    
+</body>
+</html>
