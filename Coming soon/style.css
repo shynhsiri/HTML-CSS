@@ -31,6 +31,11 @@ header .logo{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+header .logo img{
+    position: relative;
+    width: 105px;
+    height: 100px;
+}
 header  ul{
     display: flex;
     justify-content: center;
@@ -184,6 +189,10 @@ section  img#front{
 .contact-info>h2{
     color: #fff;
     margin-bottom: 20px;
+}
+.contact-info>a{
+    text-decoration: none;
+    color: #fff;
 }
 .contact-info>p{
     display: flex;
